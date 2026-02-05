@@ -77,7 +77,7 @@ class FinancialInclusionDashboard:
 # ---------------- Streamlit Runner ----------------
 if __name__=="__main__":
     # Load your prepared data
-    data = pd.read_csv("../data/financial_inclusion_data.csv")
+    data = pd.read_csv("../data/raw/ethiopia_fi_unified_data.csv")
     # Forecasts dictionary example: {"ACCESS": {"Base": df_base, "Optimistic": df_opt, "Pessimistic": df_pes}}
     forecasts = pd.read_pickle("../data/forecasts.pkl")
     association_matrix = pd.read_pickle("../data/association_matrix.pkl")
